@@ -1,5 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    printf("\\");
+    printf("\\America ya!\\");
+
+    return 0;
 }
