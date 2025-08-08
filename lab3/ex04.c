@@ -29,7 +29,7 @@ int main() {
     else if (average >= 50)
         grade = 'D';
     else
-        grade = 'F'
+        grade = 'F';
             
     printf("%s, your average is %.2f. You got grade %c.\n", name, average, grade);
 
