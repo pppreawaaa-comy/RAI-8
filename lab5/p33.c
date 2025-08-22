@@ -1,4 +1,4 @@
-#include<studio.h>
+#include<stdio.h>
 #include<conio.h>
 int main()
 {
@@ -11,4 +11,15 @@ int main()
             scanf("%d", &matrix[r][c]);
         }
     }
+
+printf("\n*** Matrix ***\n");
+for (r=0; r<3; r++)
+{
+    for(c=0; c<3; c++)
+    {
+        printf("%5d", matrix[r][c]);
+    }
+    printf("\n");
+}
+return 0;
 }
