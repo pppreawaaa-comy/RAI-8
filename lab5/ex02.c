@@ -11,7 +11,7 @@ int main()
     printf("Reversed Array: ");
     for(int i = 0; i<n; i++)
     {
-        printf("%d", reversed[i]);
+        printf("%d ", reversed[i]);
     }
     printf("\n");
     return 0;
