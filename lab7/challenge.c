@@ -1,13 +1,32 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+int main() 
 {
-    int array[5];
-    int *p = array;
+    int arr[5];
+    int *p = arr; 
     int i, j, temp;
 
     printf("Enter 5 integers: ");
-    for(i = 0; i < 5; i++)
+    for (i = 0; i < 5; i++) 
     {
-        scanf("%d", (p+i));
+        scanf("%d", (p + i));  
     }
+
+    for (i = 0; i < 5 - 1; i++) {
+        for (j = 0; j < 5 - i - 1; j++) {
+            if (*(p + j) > *(p + j + 1))
+             {
+                temp = *(p + j);
+                *(p + j) = *(p + j + 1);
+                *(p + j + 1) = temp;
+            }
+        }
+    }
+
+    printf("Sorted: ");
+    for (i = 0; i < 5; i++) {
+        printf("%d ", *(p + i));
+    }
+    printf("\n");
+
+    return 0;
 }
